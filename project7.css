@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    color:white;
+    background-color:rgb(66, 128, 168) ;
+    padding: 15px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 50%;
+}
+body:hover{
+    cursor: grab;
+}
+.container{
+    background-color: rgb(223, 208, 208);
+    padding: 20px;
+}
+.home{
+    height: 3550px;
+    padding: 100px;
+    background-color: white;
+    border: solid 1px rgb(66, 128, 168);
+    position: relative;
+}
+.head1{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    color: gray;
+    text-decoration: none;
+    padding: 10px;
+}
+a:hover{
+    color: black;
+}
+.body1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.img1 img{
+    height: 450px;
+}
+.body1 button{
+    background-color:  rgb(66, 128, 168);
+    padding: 10px;
+    border-radius: 20px;
+    
+    margin-top: 10px;
+    color: white;
+    
+}
+.body1 p{
+    color: gray;
+}
+.page2{
+    margin-top: 20px;
+}
+.page2 p , .page3 p , .page4 p{
+    margin-top: 16px;
+    color: gray;
+}
+svg{
+    color:  rgb(66, 128, 168);
+    padding-bottom: 10px;
+}
+ .container1, .container2{
+   
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+ }
+ .container1 div , .container2 div{ 
+    padding: 15px;
+    height: 180px;
+   background-color:rgb(252, 248, 248);
+   border-radius: 20px;
+   box-shadow: 5px 5px rgba(161, 156, 156, 0.123);
+
+ }
+ .page2 button , .page3 button , .page4 button{
+    background-color: white;
+    color: rgb(66, 128, 168) ;
+    border: 1px solid  rgb(66, 128, 168);
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 10px;
+ }
+ .page3 , .page4{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+ .pic2 , .pic3{
+    width: 50%;
+ }
+ .pic2 img, .pic3 img{
+    width: 100%;
+ }
+ .page4 button {
+    display: flex;
+    padding-top: 20px;
+   
+ }
+ .page5{
+    background-color: rgb(77, 163, 243);
+    border-radius: 20px;
+    height: 400px;
+    color: white;
+    text-align: center;
+    padding: 40px;
+ }
+.page5-container{
+    display: flex;
+    justify-content:space-between;
+    
+    padding: 140px;
+    
+}
+.left{
+    display: flex;
+    justify-content: center;
+    height: 180px;
+    
+ 
+}
+.left img{
+    height: 100%;
+}
+.page6{
+    
+    height: 400px;
+    margin-top: 180px;
+    text-align: center;
+}
+.page6-container{
+    display: flex;
+    justify-content:space-between;
+}
+.pic5-container, .pic6-container , .pic7-container{
+    height: 480px;
+    width: 320px;
+    margin: 10px;
+   background-color:rgb(252, 248, 248);
+   border-radius: 20px;
+   box-shadow: 5px 5px rgba(161, 156, 156, 0.123);
+   
+    
+}
+.pic5, .pic6 , .pic7{
+    height: 200px;
+    width: 320px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    
+}
+.pic5 img , .pic6 img , .pic7 img{
+height: 100%;
+width: 100%;
+border-radius: 20px  20px 0  0 ;
+}
+.page6 h5{
+    display: flex;
+    padding-left: 100px;
+
+}
+.page6 button {
+    background-color: white;
+    color: rgb(66, 128, 168) ;
+    border: 1px solid  rgb(66, 128, 168);
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 10px;
+}
+.page7{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    background-color: rgb(77, 163, 243);
+    height: 240px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    line-height: 2;
+}
+.page7 p {
+    font-size: 11px;
+   
+}
+
+@media (max-width: 1200px) {
+    .container, .home, .page5, .page6 {
+        padding: 10px;
+    }
+    .page5-container, .page6-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pic5-container, .pic6-container, .pic7-container {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .body1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .body1 button {
+        width: 100%;
+        text-align: center;
+    }
+    .page7 {
+        flex-direction: column;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .page5-container, .page6-container {
+        padding: 20px;
+    }
+    .pic5-container, .pic6-container, .pic7-container {
+        width: 100%;
+    }
+    .page7 {
+        font-size: 10px;
+    }
+}
